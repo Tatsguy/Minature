@@ -1,0 +1,212 @@
+.barra {
+  top: 0px;
+  z-index: 1006;
+  transform: translateY(0px);
+  position: fixed;
+  left: 0px;
+  width: calc(100% + 0px);
+}
+
+.barra-content {
+  display: flex;
+  padding: 1em 1.5em;
+  background-color: #b8cdf8;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.listaEle {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.btnNav {
+  height: 100%;
+  align-content: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: black;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btnNav:hover {
+  background-color: #454ade;
+  color: #b8cdf8;
+}
+
+/*Navbar App*/
+
+.frame-container{
+  background-color: #090a1c;
+  min-height: 100vh;
+}
+
+.toolbar {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  position: relative;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: height, width, transform, max-width, left, right, top,
+    bottom, box-shadow;
+  width: 100%;
+  background-color: #0b0c23;
+}
+
+.toolbar-content {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  transition: inherit;
+  width: 100%;
+  color: #454ade;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.logoApp {
+  vertical-align: middle;
+  width: 32px;
+}
+
+.fixed-profile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: #454ade;
+  font-size: 1.5em;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.rounded-profile {
+  border-radius: 100%;
+  width: 35%;
+  object-fit: contain;
+}
+
+.navigation-drawer {
+  top: 0px;
+  bottom: 0px;
+  width: 56px;
+  left: 0px;
+  z-index: 1008;
+  transform: translateX(0px);
+  position: fixed;
+  height: calc(100% + 0px);
+  background-color: #41463d;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.2s;
+  transition-property: box-shadow, transform, visibility, width, height, left,
+    right, top, bottom;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-drawer-content {
+  flex: 0 1 auto;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 64px;
+}
+
+.tool-list {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.list-item {
+  margin-bottom: 4px;
+  min-height: 48px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-inline: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  align-items: center;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  display: grid;
+  flex: none;
+  grid-template-areas: "prepend content append";
+  grid-template-columns: max-content 1fr auto;
+  max-width: 100%;
+  outline: none;
+  padding: 4px 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.main-app {
+  flex: 1 0 auto;
+  max-width: 100%;
+  padding: 20px 0px 64px 56px;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #090a1c;
+  color: white;
+  display: flex;
+}
+
+.app-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+
+.d-flex {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.text-medium-emphasis {
+  color: #41463d;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-end {
+  bottom: 0px;
+  z-index: 1004;
+  transform: translateY(0px);
+  position: fixed;
+  height: 64px;
+  left: 56px;
+  width: calc(100% - 56px);
+  text-align: end;
+  margin-bottom: 16px;
+}
