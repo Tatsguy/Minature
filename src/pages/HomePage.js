@@ -9,8 +9,8 @@ export default function HomePage() {
       <Navbar />
       <div className="Landing">
         <img src={logo} alt="Logo" width={168} />
-        <span className="headLand">Inicia Tu Aventura De Hoy</span>
-        <span className="textLand">Minature, Recuerda todo, Disfruta Todo</span>
+        <span className="headLand">Bienvenido a Minature</span>
+        <span className="textLand">Recuerda todo, Disfruta Todo</span>
         <img src={disp} alt="Displays" width={500} />
       </div>
       <div className="contentLand">

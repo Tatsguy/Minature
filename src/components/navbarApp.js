@@ -8,14 +8,17 @@ import { FaMap } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { IoIosSettings } from "react-icons/io";
 import { GoDesktopDownload } from "react-icons/go";
-import { FaPlusCircle } from "react-icons/fa";
+import { GrRefresh } from "react-icons/gr";
+import { BsFilterLeft } from "react-icons/bs";
 export default function NavbarApp() {
   return (
     <div className="frame-container">
       <header className="toolbar">
         <div className="toolbar-content">
-          <img src={logo} className="logoApp" alt="LogoMinature" />
-          <p>Minature</p>
+          <a href="/">
+            <img src={logo} className="logoApp" alt="LogoMinature" />
+            <p>Minature</p>
+          </a>
         </div>
         <button className="fixed-profile">
           <div className="profile-content">
@@ -61,17 +64,18 @@ export default function NavbarApp() {
             <div className="d-flex">
               <h3>Aventuras</h3>
               <div>
-                <button><IoIosSettings /></button>
-                <button><IoIosSettings /></button>
+                <button className="transBtn">
+                  <GrRefresh />
+                </button>
+                <button className="transBtn">
+                  <BsFilterLeft />
+                </button>
               </div>
             </div>
           </div>
           <div className="text-medium-emphasis">
             No hay aventuras que mostrar
           </div>
-        </div>
-        <div className="text-end">
-          <button><FaPlusCircle />Nuevo</button>
         </div>
       </main>
     </div>

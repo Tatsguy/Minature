@@ -40,7 +40,6 @@
 }
 
 /*Navbar App*/
-
 .frame-container{
   background-color: #090a1c;
   min-height: 100vh;
@@ -79,6 +78,7 @@
 .logoApp {
   vertical-align: middle;
   width: 32px;
+  object-fit: contain;
 }
 
 .fixed-profile {
@@ -171,6 +171,7 @@
   background-color: #090a1c;
   color: white;
   display: flex;
+  font-family: "Montserrat", sans-serif;
 }
 
 .app-container {
@@ -209,4 +210,29 @@
   width: calc(100% - 56px);
   text-align: end;
   margin-bottom: 16px;
+  vertical-align: middle;
+}
+
+.transBtn{
+  background: none;
+  color: #41463d;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn{
+  background-color: #39E981;
+  color: white;
+  font-size: 26px;
+  border: none;
+  border-radius: 46px;
+  padding: 12px 22px;
+  margin-right: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  cursor: pointer;
+}
+
+.iconoMini{
+  font-size: 20px;
 }
