@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-a{
+a {
   text-decoration: none;
   display: inline-flex;
   color: none;
   align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .Landing {
@@ -74,13 +80,13 @@ a{
   z-index: 0;
 }
 
-.card>p{
-    font-size: 18px;
+.card > p {
+  font-size: 18px;
 }
 
-.card>h3{
-    font-size: 22px;
-    font-weight: 600;
+.card > h3 {
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .responsive-img {
@@ -99,18 +105,18 @@ a{
   margin: auto;
 }
 
-.help{
+.help {
   width: 30em;
   margin-bottom: 5px;
 }
 
-.help-links{
+.help-links {
   text-decoration: none;
   color: #454ade;
   font-weight: 600;
 }
 
-.btnColab{
+.btnColab {
   display: block;
   width: 30%;
   margin: auto;
@@ -122,13 +128,116 @@ a{
   font-size: 25px;
 }
 
-.btnColab:hover{
-  background-color: #454ADE;
-  color: #B8CDF8;
+.btnColab:hover {
+  background-color: #454ade;
+  color: #b8cdf8;
 }
 
 /*Editor´s page*/
-.aplication{
+.application {
   background-color: #090a1c;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.reloj {
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #8e94a1;
+  font-size: 16px;
+}
+
+.carrousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.carrousel-item {
+  flex: 0 0 auto;
+}
+
+.btn-group {
+  background: transparent;
+  border-color: #454ade;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 22px;
+}
+
+.btn-loot {
+  background-color: #090a1c;
+  padding: 5px 20px;
   color: white;
+  font-size: 14px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.embed-container {
+  height: 100%;
+  min-width: 95%;
+  position: relative;
+}
+
+#text {
+  width: 100%;
+  overflow: hidden;
+  color: #222;
+  background-color: transparent;
+  font-family: Courier, monospace;
+  font-weight: normal;
+  font-size: 24px;
+  resize: none;
+  line-height: 40px;
+  outline: none;
+  border: none;
+}
+
+.footer {
+  bottom: 0px;
+  z-index: 1004;
+  transform: translateY(0px);
+  position: fixed;
+  left: 0px;
+  width: calc(100% + 0px);
+  background-color: #0b0c23;
+}
+
+.round-foot-btn {
+  border-radius: 50%;
+  transition: 0.3s;
+  font-size: 18px;
+  padding: 0.3rem 0.5rem;
+  align-items: center;
+  color: white;
+}
+
+.round-foot-btn:hover{
+  background-color: #454ade;
+  color: #b8cdf8;
+}
+
+.counter{
+  margin-left: 22px;
 }

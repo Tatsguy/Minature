@@ -185,6 +185,9 @@
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-small{
   margin-top: 16px;
 }
 
@@ -219,6 +222,11 @@
   font-size: 22px;
   border: none;
   cursor: pointer;
+  padding: 15px 10px;
+}
+
+.returnBtn>.transBtn{
+  color: white
 }
 
 .addBtn{
